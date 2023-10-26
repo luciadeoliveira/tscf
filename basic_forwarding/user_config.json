@@ -5,7 +5,7 @@
           {
               "name": "v0_to_v1",
               "match": 
-                  { "ipv4.dstAddr" : { "value" : "10.0.0.2/32" } },
+                  { "ipv4.dstAddr" : { "value" : "10.0.0.2/30" } },
               "action": {
                   "type": "ingress::ipv4_forward",
                   "data": {
@@ -21,7 +21,7 @@
           {
               "name": "v1_to_v0",
               "match": 
-                  { "ipv4.dstAddr": { "value": "10.0.0.1/32" } },
+                  { "ipv4.dstAddr": { "value": "10.0.0.1/30" } },
               "action": {
                   "type": "ingress::ipv4_forward",
                   "data": {
