@@ -33,7 +33,23 @@
                       }
                   }
               }
-          }
+          },
+          {
+            "name": "default",
+            "match": 
+                { "ipv4.dstAddr" : { "value" : "0/0" } },
+            "action": {
+                "type": "ingress::ipv4_forward",
+                "data": {
+                    "dstAddr": { 
+                        "value": "00:15:4d:00:00:00" 
+                    },
+                    "port": { 
+                        "value": "vf0_0" 
+                    }
+                }
+            }
+        }
           ]
        }
   }
