@@ -92,9 +92,9 @@ control MyIngress(inout headers hdr,
 
     action ipv4_forward(macAddr_t dstAddr, egressSpec_t port) {
         standard_metadata.egress_spec = standard_metadata.ingress_port;
-        macAddr_t dst = hdr.ethernet.dstAddr;
+        macAddr_t src = hdr.ethernet.srcAddr;
         hdr.ethernet.srcAddr = hdr.ethernet.dstAddr;
-        hdr.ethernet.dstAddr = dst;
+        hdr.ethernet.dstAddr = src;
         hdr.ipv4.ttl = hdr.ipv4.ttl - 1;
     }
 
