@@ -10,7 +10,7 @@
                   "type": "ingress::ipv4_forward",
                   "data": {
                       "dstAddr": { 
-                          "value": "00:15:4d:00:00:01" 
+                          "value": "00:15:4d:13:5C:AC" 
                       },
                       "port": { 
                           "value": "vf0_1" 
@@ -26,30 +26,14 @@
                   "type": "ingress::ipv4_forward",
                   "data": {
                       "dstAddr": { 
-                          "value": "00:15:4d:00:00:00" 
+                          "value": "00:15:4d:13:5C:AB" 
                       },
                       "port": { 
                           "value": "vf0_0" 
                       }
                   }
               }
-          },
-          {
-            "name": "default",
-            "match": 
-                { "ipv4.dstAddr" : { "value" : "0/0" } },
-            "action": {
-                "type": "ingress::ipv4_forward",
-                "data": {
-                    "dstAddr": { 
-                        "value": "00:15:4d:00:00:00" 
-                    },
-                    "port": { 
-                        "value": "vf0_0" 
-                    }
-                }
             }
-        }
           ]
        }
   }
