@@ -1,8 +1,8 @@
 from scapy.all import Ether, IP, UDP, sendp
 
 # Configura las direcciones MAC e IP
-src_mac = "00:15:4d:00:00:01"
-dst_mac = "00:15:4d:00:00:01"
+src_mac = "00:15:4d:13:5c:ab"
+dst_mac = "00:15:4d:13:5c:ab"
 src_ip = "10.2.0.1"
 dst_ip = "10.2.0.1"
 
