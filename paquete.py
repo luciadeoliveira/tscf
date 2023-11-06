@@ -7,8 +7,8 @@ src_ip = "192.168.60.241"
 dst_ip = "10.2.0.1"
 
 # Configura los puertos de origen y destino
-src_port = "eno1"
-dst_port = "vf0_1"
+src_port = 12345    
+dst_port = 67890
 
 # Crea el contenido del mensaje UDP
 payload = "Este es el mensaje que quiero enviar"
