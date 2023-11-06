@@ -26,5 +26,5 @@ udp = UDP(sport=src_port, dport=dst_port)
 packet = eth / ip / udp / payload
 
 # Envía el paquete
-sendp(packet, iface="eno1")
+sendp(packet, iface="vf0_1")
 print("Paquete enviado.")
