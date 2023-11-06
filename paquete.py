@@ -1,9 +1,9 @@
 from scapy.all import Ether, IP, UDP, sendp
 
 # Configura las direcciones MAC e IP
-src_mac = "00:15:4d:00:00:01"
-dst_mac = "00:15:4d:00:00:01"
-src_ip = "10.2.0.1"
+src_mac = "28:80:23:a9:b4:7c"
+dst_mac = "00:15:4d:13:5C:AB"
+src_ip = "192.168.60.241"
 dst_ip = "10.2.0.1"
 
 # Configura los puertos de origen y destino
@@ -26,6 +26,5 @@ udp = UDP(sport=src_port, dport=dst_port)
 packet = eth / ip / udp / payload
 
 # Envía el paquete
-sendp(packet, iface="vf0_1")
-sendp(packet, iface="vf0_1")
+sendp(packet, iface="eno1")
 print("Paquete enviado.")
