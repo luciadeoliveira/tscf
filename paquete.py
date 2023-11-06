@@ -8,7 +8,7 @@ dst_ip = "10.2.0.1"
 
 # Configura los puertos de origen y destino
 src_port = 12345    
-dst_port = 6789
+dst_port = 6890
 
 # Crea el contenido del mensaje UDP
 payload = "Este es el mensaje que quiero enviar"
